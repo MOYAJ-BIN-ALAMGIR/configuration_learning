@@ -416,3 +416,12 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/configuration_aspdotnet_core/NewFolder
+/configuration_aspdotnet_core/obj/Debug/net8.0/configuration_aspdotnet_core.AssemblyInfo.cs
+/configuration_aspdotnet_core/obj/Debug/net8.0/configuration_aspdotnet_core.assets.cache
+/configuration_aspdotnet_core/obj/Debug/net8.0/configuration_aspdotnet_core.AssemblyInfoInputs.cache
+/configuration_aspdotnet_core/obj/Debug/net8.0/configuration_aspdotnet_core.GeneratedMSBuildEditorConfig.editorconfig
+/configuration_aspdotnet_core/obj/Debug/net8.0/rpswa.dswa.cache.json
+/configuration_aspdotnet_core/obj/configuration_aspdotnet_core.csproj.nuget.dgspec.json
+/configuration_aspdotnet_core/obj/project.assets.json
+/configuration_aspdotnet_core/obj/project.nuget.cache
