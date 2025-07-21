@@ -1,3 +1,4 @@
+using Configuation.Middlerwares;
 using Configuation.Middlewares;
 using Configuation.Services;
 
@@ -18,6 +19,7 @@ if(!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseMiddleware<ShortCircuitMiddleware>();
 app.UseMiddleware<ContentMiddleware>();
 
 app.UseRouting();
