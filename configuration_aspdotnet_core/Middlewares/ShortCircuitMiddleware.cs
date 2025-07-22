@@ -6,7 +6,11 @@
         public ShortCircuitMiddleware(RequestDelegate next) => nextDelegate = next;
         public async Task Invoke(HttpContext httpContext)
         {
-            if (httpContext.Request.Headers["User-Agent"].Any(v => v.Contains("Firefox")))
+            //Code For ShortCircuitMiddleware.
+            //if (httpContext.Request.Headers["User-Agent"].Any(v => v.Contains("Firefox")))
+
+            //Code for RequestEdditingMiddleware
+            if (httpContext.Items["Firefox"] as bool? == true)  
             {
                 httpContext.Response.StatusCode = StatusCodes.Status401Unauthorized;
             }

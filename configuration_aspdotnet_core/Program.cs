@@ -1,5 +1,6 @@
 using Configuation.Middlerwares;
 using Configuation.Middlewares;
+using configuation.Middlewares;
 using Configuation.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,7 @@ if(!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseMiddleware<RequestEditingMiddleware>();
 app.UseMiddleware<ShortCircuitMiddleware>();
 app.UseMiddleware<ContentMiddleware>();
 
